@@ -3,8 +3,7 @@ const path = require('path');
 
 fs.readdir('.', (err, files) => {
   if (err) {
-    console.error('Error reading current dir using readdir:', err);
-    return;
+    return console.error('Error reading current dir using readdir:', err);
   }
   console.log('Reading current dir using readdir:', files);
 });
